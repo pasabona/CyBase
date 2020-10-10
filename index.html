@@ -28,9 +28,10 @@
         }
     </style>
     <script>
-        function Test(){
+        function Test(varable){
             alert("Function called by clickteam");
             document.getElementById("bruh").innerHTML = "Bruh";
+            if (varable != 1) return;
             return "Hello World";
         }
     </script>
