@@ -28,7 +28,7 @@
         }
     </style>
     <script>
-        function SplitString(stringToSplit, splitvar, id){
+        function SplitString(String.raw(stringToSplit), splitvar, id){
             if (id == -1){
                 var idlenght = stringToSplit.split(splitvar).length
                 return stringToSplit.split(splitvar)[idlenght-1]
