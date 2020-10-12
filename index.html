@@ -7,7 +7,7 @@
     </head>
     <body>
         <img src="pics/CYBASE testconcept.PNG" id="vip">
-        <h1 id="bruh">"filler"</h1>
+        <h1>"filler"</h1>
     </body>
     <footer>
 
@@ -28,11 +28,12 @@
         }
     </style>
     <script>
-        function Test(varable){
-            alert("Function called by clickteam");
-            document.getElementById("bruh").innerHTML = "Bruh";
-            if (varable != 1) return;
-            return "Hello World";
+        function SplitString(stringToSplit, splitvar, id){
+            if (id == -1){
+                var idlenght = stringToSplit.split(splitvar).length
+                return stringToSplit.split(splitvar)[idlenght-1]
+            }
+            return stringToSplit.split(splitvar)[id];
         }
     </script>
 </html>
