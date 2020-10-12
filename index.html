@@ -28,11 +28,8 @@
         }
     </style>
     <script>
-        function ReplaceShit(str) {
-            return str.replace(/\\/g, "\\\\");
-        };
         function SplitString(stringToSplit, splitvar, id){
-            stringToSplit = ReplaceShit(stringToSplit);
+            stringToSplit = String.raw(stringToSplit);
             if (id == -1){
                 var idlenght = stringToSplit.split(splitvar).length
                 return stringToSplit.split(splitvar)[idlenght-1]
