@@ -27,22 +27,6 @@
             top: 160px;
         }
     </style>
-    <script>
-        function SplitString(stringToSplit, splitvar, id){
-            stringToSplit = String.raw(stringToSplit);
-            if (id == -1){
-                var idlenght = stringToSplit.split(splitvar).length
-                return stringToSplit.split(splitvar)[idlenght-1]
-            }else if (id == -2){
-                var newstring = "";
-                for (i=0;i<stringToSplit.split(splitvar).length-1;i++){
-                    newstring += stringToSplit.split(splitvar)[i];
-                }
-                return newstring;
-            }
-            return stringToSplit.split(splitvar)[id];
-        }
-    </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
 
@@ -66,5 +50,21 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
       firebase.analytics();
+    </script>
+    <script>
+        function SplitString(stringToSplit, splitvar, id){
+            stringToSplit = String.raw(stringToSplit);
+            if (id == -1){
+                var idlenght = stringToSplit.split(splitvar).length
+                return stringToSplit.split(splitvar)[idlenght-1]
+            }else if (id == -2){
+                var newstring = "";
+                for (i=0;i<stringToSplit.split(splitvar).length-1;i++){
+                    newstring += stringToSplit.split(splitvar)[i];
+                }
+                return newstring;
+            }
+            return stringToSplit.split(splitvar)[id];
+        }
     </script>
 </html>
