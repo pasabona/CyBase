@@ -27,44 +27,4 @@
             top: 160px;
         }
     </style>
-    <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-
-    <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
-
-    <script>
-      // Your web app's Firebase configuration
-      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-      var firebaseConfig = {
-        apiKey: "AIzaSyCmoak2i2BjzX17MPwJcXTDisaIma5Eai0",
-        authDomain: "cybase-3a41e.firebaseapp.com",
-        databaseURL: "https://cybase-3a41e.firebaseio.com",
-        projectId: "cybase-3a41e",
-        storageBucket: "cybase-3a41e.appspot.com",
-        messagingSenderId: "27419820386",
-        appId: "1:27419820386:web:8699d0c1aeb4235cec2c3b",
-        measurementId: "G-ZYBCQLB86C"
-      };
-      // Initialize Firebase
-      firebase.initializeApp(firebaseConfig);
-      firebase.analytics();
-    </script>
-    <script>
-        function SplitString(stringToSplit, splitvar, id){
-            stringToSplit = String.raw(stringToSplit);
-            if (id == -1){
-                var idlenght = stringToSplit.split(splitvar).length
-                return stringToSplit.split(splitvar)[idlenght-1]
-            }else if (id == -2){
-                var newstring = "";
-                for (i=0;i<stringToSplit.split(splitvar).length-1;i++){
-                    newstring += stringToSplit.split(splitvar)[i];
-                }
-                return newstring;
-            }
-            return stringToSplit.split(splitvar)[id];
-        }
-    </script>
 </html>
