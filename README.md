@@ -1,3 +1,5 @@
 # CyBase
-CyBase stuff
-it's a test, and the website is far from done
+Ripping of steam, basically.
+
+Not to try to make money or anything, but to learn, and to have fun with friends :)
+Contact: pasabona@gmail.com
