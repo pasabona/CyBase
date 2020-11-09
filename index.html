@@ -28,17 +28,17 @@
         }
     </style>
     <script>
-        function GetVersion(x){
-            var txtFile = new XMLHttpRequest();
-            txtFile.open("GET", "https://pasabona.github.io/CyBase/core/version.txt", true);
-            txtFile.onreadystatechange = function() {
-                if (txtFile.readyState === 4) {
-                    if (txtFile.status === 200) {
-                        version = txtFile.responseText;
-                    }
+        var txtFile = new XMLHttpRequest();
+        txtFile.open("GET", "https://pasabona.github.io/CyBase/core/version.txt", true);
+        txtFile.onreadystatechange = function() {
+            if (txtFile.readyState === 4) {
+                if (txtFile.status === 200) {
+                    version = txtFile.responseText;
                 }
             }
-            txtFile.send(null);
+        }  
+        txtFile.send(null);        
+        function GetVersion(x){
             return version;
         }
     </script>
