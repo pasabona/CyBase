@@ -31,15 +31,15 @@
         var txtFile = new XMLHttpRequest();
         txtFile.open("GET", "https://pasabona.github.io/CyBase/core/version.txt", true);
         txtFile.onreadystatechange = function() {
-        if (txtFile.readyState === 4) {
-            if (txtFile.status === 200) {
-                allText = txtFile.responseText;
+            if (txtFile.readyState === 4) {
+                if (txtFile.status === 200) {
+                    version = txtFile.responseText;
+                }
             }
-        }
         }
         txtFile.send(null);
         function GetVersion(x){
-            return allText;
+            return version;
         }
     </script>
 </html>
