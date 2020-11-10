@@ -7,7 +7,7 @@
     </head>
     <body>
         <img src="pics/CYBASE testconcept.PNG" id="vip">
-        <h1 id="version"    >asd</h1>
+        <h1 id="version">asd</h1>
     </body>
     <footer>
 
@@ -34,12 +34,12 @@
             if (txtFile.readyState === 4) {
                 if (txtFile.status === 200) {
                     version = txtFile.responseText;
-                    document.getElementById("version").innerHTML = "Version: "+version;  
+                    document.getElementById("version").innerHTML = "Version: " + version;  
                 }
             }
         }  
         txtFile.send(null);     
-        function GetVersion(){ 
+        function getversion(){ 
             return version;
         }
     </script>
